@@ -1,0 +1,27 @@
+﻿# Large generated datasets
+*.csv
+
+# Training logs
+*.log
+
+# Trained AI models
+*.pkl
+*.joblib
+*.h5
+*.keras
+*.pt
+*.pth
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Previous Git backup
+.git-backup-before-cleanup/
+
+# Local configuration
+.claude/

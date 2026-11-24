@@ -1,0 +1,15 @@
+{
+  "accuracy": 0.9971,
+  "precision": 0.9466,
+  "recall": 0.9166,
+  "f1": 0.9313,
+  "roc_auc": 0.9955,
+  "recall_by_profile": {
+    "Emergency": 0.943,
+    "Healthy": 0.0,
+    "Stage2": 0.9967,
+    "Urgency": 0.8027
+  },
+  "lookahead_ticks": 30,
+  "selected_max_depth": 20
+}

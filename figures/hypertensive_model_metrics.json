@@ -1,0 +1,77 @@
+{
+  "classifier": {
+    "overall_accuracy": 0.9594,
+    "per_class": {
+      "Maintain": {
+        "precision": 0.9647,
+        "recall": 0.9884,
+        "f1-score": 0.9764,
+        "support": 948817.0
+      },
+      "Increase": {
+        "precision": 0.9808,
+        "recall": 0.9032,
+        "f1-score": 0.9404,
+        "support": 350813.0
+      },
+      "Decrease": {
+        "precision": 0.9693,
+        "recall": 0.5788,
+        "f1-score": 0.7248,
+        "support": 23901.0
+      },
+      "Emergency": {
+        "precision": 0.8542,
+        "recall": 0.9683,
+        "f1-score": 0.9077,
+        "support": 105788.0
+      },
+      "Toxicity-Cap": {
+        "precision": 0.9999,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 10681.0
+      }
+    },
+    "per_profile_accuracy": {
+      "Emergency": 0.8559,
+      "Healthy": 0.9805,
+      "Stage2": 0.992,
+      "Urgency": 0.9573
+    }
+  },
+  "regressor": {
+    "delta_r2": 0.9877,
+    "delta_mae": 0.0235,
+    "delta_rmse": 0.3078,
+    "naive_zero_change_baseline_mae": 0.1367,
+    "reconstructed_absolute_r2": 1.0,
+    "reconstructed_absolute_mae": 0.0235,
+    "reconstructed_absolute_rmse": 0.3078,
+    "per_profile_absolute_mae": {
+      "Emergency": 0.0797,
+      "Healthy": 0.0126,
+      "Stage2": 0.0095,
+      "Urgency": 0.0196
+    }
+  },
+  "selected_max_depth": {
+    "classifier": 20,
+    "regressor": 14
+  },
+  "features_used": [
+    "MeasuredMAP",
+    "MeasuredHR",
+    "MeasuredSpO2",
+    "FlowRate",
+    "WeightKg",
+    "Age",
+    "ElapsedHours",
+    "MAP_Floor",
+    "MeasuredBP_Error",
+    "MeasuredBP_Trend",
+    "CumulativeMcgPerKg",
+    "CyanideRateRisk",
+    "CyanideBufferExceeded"
+  ]
+}

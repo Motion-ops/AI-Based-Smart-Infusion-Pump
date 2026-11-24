@@ -1,0 +1,27 @@
+# Smart AI Infusion Pump - Python dependencies
+#
+# Desktop app (native_app.py) and simulation/training scripts:
+PyQt6
+pyqtgraph
+pyserial
+numpy
+pandas
+scikit-learn
+joblib
+
+# Clinician dashboard (clinician_dashboard.py) - separate process,
+# not bundled into the packaged .exe:
+flask
+flask-sock
+
+# Optional remote telemetry (native_app.py, off by default - see
+# ADAFRUIT_IO_ENABLED):
+adafruit-io
+
+# Remote monitoring dashboard publisher (remote_dashboard/
+# telemetry_publisher.py, off by default - see
+# REMOTE_DASHBOARD_ENABLED). Direct dependency, not just transitive
+# via adafruit-io above - pin it explicitly so `python -I
+# telemetry_publisher.py` (the documented offline self-test) works
+# even in an isolated environment.
+requests>=2.31
