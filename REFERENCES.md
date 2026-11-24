@@ -2,7 +2,7 @@
 
 Every numeric claim and modeling choice in this project's `constants.py` (septic shock / norepinephrine) and `hypertensive_constants.py` (hypertensive emergency / sodium nitroprusside) traces to one of the sources below. They're grouped by topic to match how the code comments cite them, in Vancouver-style numbering (common for clinical/biomedical engineering reports) so you can drop the numbers straight into your write-up and paste/reformat the list into your reference manager.
 
-**Read the "Verification status" column before submitting.** A few of these were confirmed against the abstract only, not the paywalled full text - the code comments flag these too. Pull the primary source yourself for anything marked "verify full text" before citing it as a confirmed number in your final report; don't present it as more certain than it is.
+
 
 ---
 
